@@ -1,0 +1,39 @@
+html{
+  background-color: whitesmoke;
+  font-family: 'Lato', Arial sans-serif;
+}
+
+#nav{
+	margin-bottom: 35px;
+}
+
+#carousel{
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.carousel-indicators {
+	height: 470px;
+}
+
+#productos #cuadrado{
+	margin-bottom: 20px;
+}
+
+@media(min-width: 768px){
+	#productos #cuadrado{
+		margin:10px 0;
+		width: 33.33%;
+	}
+}
+
+@media(min-width: 991px){
+	#carousel{
+		margin-top: 0px;
+	}
+
+	.modal-content{
+		font-size: 17px;
+		line-height: 1.2;
+	}
+}

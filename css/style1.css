@@ -1,0 +1,207 @@
+*{ box-sizing: border-box;}
+
+html{
+  font-family: 'Lato', Arial sans-serif;
+  color: whitesmoke;
+}
+
+a:focus, a:hover{
+  color: #cd2a78 !important;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  text-decoration: none!important;
+  font-size: 40px;
+}
+
+.container p{
+  text-align: center;
+  display: inline-block;
+}
+
+#home{
+  text-align: center;
+  padding: 30px 0 0px;
+}
+
+video#bgvid {
+  margin-top: 90px;
+  position: absolute;
+  left: 50%;
+  top: 23%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  filter: brightness(30%);
+}
+
+.home-wrapper{
+  font-family: 'Lato', Arial sans-serif;
+  font-size: 16px;
+  background-size: cover;
+  color: #ffffff;
+  background-attachment: fixed;
+}
+
+.home-wrapper img{
+  margin: 0 auto;
+  width: 220px;
+  height: 220px;
+}
+
+#home h1{
+  color: #cccccc;
+  font-size: 68px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+
+#home p{
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.categorias .titulo h1{
+  font-family: 'Lato', Arial sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+.categorias .titulo .divider {
+  width: 60%;
+  border-top: 5px solid rgb(21, 158, 45);
+  margin: 0 auto;
+}
+
+
+.wrapper {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.right {float: center !important;}
+/* Image zoom on hover + Overlay colour */
+.parent {
+    height: 500px; /*30 */
+    width: 500px; /*45 */
+    margin: 50px; /*20 */
+    border:  1px solid #bbbbbb;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    float: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.child {
+    height: 500px; /*100 */
+    width: 500px; /* 100 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+/* Several different images */
+.bg-one {background-image: url(../images/Consoladores.png);}
+.bg-two {background-image: url(../images/Vibradores.png);}
+.bg-three {background-image: url(../images/Aceites.png);}
+.bg-four {background-image: url(../images/Cremas.png);}
+.bg-five {background-image: url(../images/Juegos.png);}
+.bg-six {background-image: url(../images/Lenceria.png);}
+.bg-seven {background-image: url(../images/Potencializadores.png);}
+.bg-eight {background-image: url(../images/fetish.png);}
+.bg-nine {background-image: url(../images/Feromonas.png);}
+.bg-ten {background-image: url(../images/Estimulantes.png);}
+.bg-eleven {background-image: url(../images/Anillos.png);}
+.bg-twelve {background-image: url(http://blog.whitepages.com/wp-content/uploads/2015/04/san-franc.jpg);}
+.bg-thirteen {background-image: url(../images/Retardantes.png);}
+.bg-fourteen {background-image: url(http://blog.whitepages.com/wp-content/uploads/2015/04/san-franc.jpg);}
+.bg-fifteen {background-image: url(../images/Bolas.png);}
+
+
+a {
+    display: none;
+    font-size: 35px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    color: #ffffff !important;
+    font-family: ¿'Lato', Arial sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    /*text-decoration: none;*/
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: inline-block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: inline-block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(88, 88, 88, 0.75);
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .parent {width: 80%; margin: 20px 0px}
+        .wrapper {padding: 20px 20px;}
+}
+
+
+
+
+.hello {display: none}
+
+
+
+footer{
+  background: #20708a;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 18px;
+}
